@@ -9,3 +9,17 @@ def search(product_category:str,
     return product.check_features(
         known_features
     )
+
+
+def write_csv(rows):
+    with open("test.csv", "w") as csvfile:
+        fieldnames = rows[0].keys()
+        writer = csv.DictWriter(
+            csvfile,
+            fieldnames=fieldnames
+        )
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(
+                row
+            )
