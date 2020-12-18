@@ -1,4 +1,4 @@
-from energy_star_database.e_star_query.datasets.product_class import ProductClass
+from energy_star_database.e_star_query.datasets.products.product_class import ProductClass
 from energy_star_database.e_star_query.datasets.utils import get_float_value
 
 pct_time_at_0_load=0.8

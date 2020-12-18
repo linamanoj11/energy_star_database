@@ -1,6 +1,6 @@
 from typing import Optional
 
-from energy_star_database.e_star_query.datasets.product_class import ProductClass
+from energy_star_database.e_star_query.datasets.products.product_class import ProductClass
 from energy_star_database.e_star_query.datasets.utils import get_float_value
 
 
