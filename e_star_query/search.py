@@ -1,6 +1,6 @@
+#! /usr/bin/env python
 import argparse
 import csv
-import json
 
 from .utils import get_product_from_category
 

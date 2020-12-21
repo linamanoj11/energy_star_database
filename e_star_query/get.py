@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 import argparse
 
 from .utils import get_product_from_category
