@@ -23,6 +23,7 @@ def search(product_category:str,
         known_features
     )
 
+
 #TODO test function
 def write_csv(rows, product_category, csv_file_name=None):
     if csv_file_name is None:
