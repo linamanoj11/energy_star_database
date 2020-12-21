@@ -1,4 +1,4 @@
-from energy_star_database.e_star_query.get.get import get
+from energy_star_database.e_star_query.get import get
 
 
 class TestGet():

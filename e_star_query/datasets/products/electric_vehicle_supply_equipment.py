@@ -1,5 +1,6 @@
-from energy_star_database.e_star_query.datasets.products.product_class import ProductClass
-from energy_star_database.e_star_query.datasets.utils import get_float_value
+from ...datasets.products.product_class import ProductClass
+from ...datasets.utils import get_float_value
+
 
 
 def delta_watts(full_current_operation_mode_test_total_loss_w,

@@ -2,11 +2,12 @@ from abc import ABC, abstractmethod
 
 from sodapy import Socrata
 
-from energy_star_database.e_star_query.datasets.products.electric_vehicle_supply_equipment import ElectricVehicleSupply
-from energy_star_database.e_star_query.datasets.products.television_data import Television
-from energy_star_database.e_star_query.datasets.products.uninterruptible_power_supplies import \
+
+from ..datasets.products.electric_vehicle_supply_equipment import ElectricVehicleSupply
+from ..datasets.products.television_data import Television
+from ..datasets.products.uninterruptible_power_supplies import \
     UninterruptiblePowerSupplies
-from energy_star_database.e_star_query.query import check_if_feature_value_match
+from ..query import check_if_feature_value_match
 
 SOCRATA_DOMAN = 'data.energystar.gov'
 TOKEN_TEXT = "z7rbgOa4tVyiRSpwMQDF4xrv6"

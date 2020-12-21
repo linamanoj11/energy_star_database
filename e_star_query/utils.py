@@ -1,4 +1,4 @@
-from energy_star_database.e_star_query.datasets.energy_star_datasets import TelevisionDataset, \
+from .datasets.energy_star_datasets import TelevisionDataset, \
     UninterruptiblePowerSuppliesDataset, ElectricVehicleSupplyDatasets
 
 TELEVISION_STRINGS = [
