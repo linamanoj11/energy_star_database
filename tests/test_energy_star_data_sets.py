@@ -1,4 +1,4 @@
-from energy_star_database.e_star_query.datasets.energy_star_datasets import TelevisionDataset, \
+from ..datasets.energy_star_datasets import TelevisionDataset, \
     UninterruptiblePowerSuppliesDataset, ElectricVehicleSupplyDatasets
 
 
@@ -15,8 +15,8 @@ class TestEnergyStarDataSetGetFeatures():
     def test_uips_dataset(self):
         television_data = UninterruptiblePowerSuppliesDataset()
         actual = television_data.get_product_features()
-        expected_fourth_row_model_name = "ST425"
-        expected_fourth_row_delta_watts = 4238.85
+        expected_fourth_row_model_name = "0E-625V8LCD"
+        expected_fourth_row_delta_watts = 1592.84
 
         assert actual[3]["model_name"] == expected_fourth_row_model_name
         assert round(actual[3]["delta_watts"],2) == expected_fourth_row_delta_watts
@@ -24,8 +24,8 @@ class TestEnergyStarDataSetGetFeatures():
     def test_electric_vehicle_dataset(self):
         television_data = ElectricVehicleSupplyDatasets()
         actual = television_data.get_product_features()
-        expected_fourth_row_model_name = "Blink IQ 200 Smart"
-        expected_fourth_row_delta_watts = 13.54
+        expected_fourth_row_model_name = "POWERPORT"
+        expected_fourth_row_delta_watts = 22.36
 
         assert actual[3]["model_name"] == expected_fourth_row_model_name
         assert round(actual[3]["delta_watts"],2) == expected_fourth_row_delta_watts

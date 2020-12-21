@@ -1,6 +1,6 @@
 import csv
 
-from energy_star_database.e_star_query.search.search import search
+from ..search import search
 
 
 class TestSearch():

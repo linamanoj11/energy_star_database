@@ -1,5 +1,5 @@
-from energy_star_database.e_star_query.datasets.energy_star_datasets import TelevisionDataset
-from energy_star_database.e_star_query.datasets.products.television_data import Television
+from ..datasets.energy_star_datasets import TelevisionDataset
+from ..datasets.products.television_data import Television
 
 
 class TestTelevision():
