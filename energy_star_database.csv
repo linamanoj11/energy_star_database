@@ -1,6 +1,0 @@
-pd_id,brand_name,model_name,technology_type,ethernet_supported,size_inches,resolution_pixels,power_consumption_in_on_mode_watts,maximum_on_mode_power_for_certification_watts,power_consumption_in_standby_mode_watts,maximum_standby_passive_mode_power_for_certification_watts,delta_watts
-2328272,NEC,E437Q,Direct-lit LED,Fast Ethernet (100 Mbit/s),42.51,3840x2160,60.64,61.04,0.5,0.35,0.174999999999999
-2326784,NEC,E557Q,Direct-lit LED,Fast Ethernet (100 Mbit/s),54.64,55x2160,81.13,84.73,0.5,0.5,2.520000000000006
-2328271,NEC,E327,Direct-lit LED,Fast Ethernet (100 Mbit/s),31.55,1920x1080,27.8,28.03,0.5,0.35,0.06800000000000034
-2326783,NEC,E657Q,Direct-lit LED,Fast Ethernet (100 Mbit/s),64.53,65x2160,72.02,102.84,0.5,0.5,20.033000000000005
-2326782,NEC,E507Q,Direct-lit LED,Fast Ethernet (100 Mbit/s),49.5,50x2160,71.05,74.62,0.5,0.5,2.499000000000005

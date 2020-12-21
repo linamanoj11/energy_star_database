@@ -5,6 +5,7 @@ import csv
 from .utils import get_product_from_category
 
 
+#TODO test function
 def _split_key_value_pairs(inputs):
     features = {}
     for input in inputs:
@@ -14,6 +15,7 @@ def _split_key_value_pairs(inputs):
         features[key] = value
     return features
 
+
 def search(product_category:str,
            known_features: dict):
     product = get_product_from_category(product_category)
@@ -21,7 +23,7 @@ def search(product_category:str,
         known_features
     )
 
-
+#TODO test function
 def write_csv(rows, product_category, csv_file_name=None):
     if csv_file_name is None:
         csv_file_name = f"energy_star_database_{product_category}.csv"
@@ -37,6 +39,7 @@ def write_csv(rows, product_category, csv_file_name=None):
             writer.writerow(
                 row
             )
+
 
 def main():
     parser=argparse.ArgumentParser(
@@ -68,6 +71,7 @@ def main():
         write_csv(matching_rows, args.product_category, args.csv_name)
     else:
         print(f"No matching query for {args.features}")
+
 
 if __name__ == '__main__':
     main()

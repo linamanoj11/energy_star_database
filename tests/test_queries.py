@@ -1,4 +1,4 @@
-from energy_star_database.e_star_query.query import check_if_feature_value_match
+from ..query import check_if_feature_value_match
 
 
 class TestQueries():
