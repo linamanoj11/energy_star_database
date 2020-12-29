@@ -4,9 +4,13 @@ This repo holds command line tools that can query products in the [EnergyStar
 database](https://www.energystar.gov/productfinder/advanced).
 
 ##Commands
+
 ###Get: 
+
  Given a product category, brand name, and model name, fetch the product info from the EnergyStar
-database and display its features to the user.
+database and display its features to the user. If the model name and brand name are not enough to specify a 
+unique product than the output will give you the first one and notify you.
+
 To run the get command line. Please run the following line from the directory that holds this "energy_star_database" repo. 
 
 ```
@@ -21,6 +25,7 @@ python -m energy_star_database.get -product_category "television" -brand_name "S
 
 
 ###Search:
+
  Given a product category and the values of one or more features, output a CSV of all
 products that satisfy the search criteria. Optional csv_name has an input.
 
@@ -38,6 +43,7 @@ Note each product_category has a variety of feature names. If no queries are fou
 ##  Dependencies
 
 ### [sodapy](https://github.com/xmunoz/sodapy)
+
 Required package used to access EnergyStar Database
 To install:
 
