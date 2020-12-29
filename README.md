@@ -3,9 +3,9 @@
 This repo holds command line tools that can query products in the [EnergyStar
 database](https://www.energystar.gov/productfinder/advanced).
 
-##Commands
+## Commands
 
-###Get: 
+### Get: 
 
  Given a product category, brand name, and model name, fetch the product info from the EnergyStar
 database and display its features to the user. If the model name and brand name are not enough to specify a 
@@ -24,7 +24,7 @@ python -m energy_star_database.get -product_category "television" -brand_name "S
 ```
 
 
-###Search:
+### Search:
 
  Given a product category and the values of one or more features, output a CSV of all
 products that satisfy the search criteria. Optional csv_name has an input.
