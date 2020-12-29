@@ -14,6 +14,20 @@ def delta_watts(full_current_operation_mode_test_total_loss_w,
                 idle_mode_input_power_w,
                 idle_mode_power_factor
                 ):
+
+    if any(
+            [full_current_operation_mode_test_total_loss_w is None,
+                no_vehicle_mode_total_allowance_w is None,
+                no_vehicle_mode_input_power_w is None,
+                no_vehicle_mode_power_factor is None,
+                partial_on_mode_total_allowance_w is None,
+                partial_on_mode_input_power_w is None,
+                partial_on_mode_power_factor is None,
+                idle_mode_total_allowance_w is None,
+                idle_mode_input_power_w is None,
+                idle_mode_power_factor is None]
+    ):
+        return None
     return full_current_operation_mode_test_total_loss_w \
            + ((no_vehicle_mode_total_allowance_w - no_vehicle_mode_input_power_w) * no_vehicle_mode_power_factor) \
            + ((partial_on_mode_total_allowance_w - partial_on_mode_input_power_w) * partial_on_mode_power_factor) \

@@ -11,11 +11,12 @@ def get(product_category: str, brand_name: str, model_name: str):
             "brand_name": brand_name, "model_name": model_name
         }
     )
-    if len(matching_rows) < 0:
-        return None
+    if len(matching_rows) < 1:
+        return f"No products found with product_category {product_category}, brand name {brand_name} and model_name {model_name}"
     elif len(matching_rows) > 1:
         print("More then 1 result matches query please use search for more infor")
-    return matching_rows[0]
+    else:
+        return matching_rows[0]
 
 
 def main():

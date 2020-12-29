@@ -19,6 +19,12 @@ def _split_key_value_pairs(inputs):
 def search(product_category:str,
            known_features: dict):
     product = get_product_from_category(product_category)
+    products_with_features = product.check_features(
+        known_features
+    )
+    if len(products_with_features) ==0:
+        print(f"No matching query for {known_features}")
+        print(f"Check if features is a valid name this product {product_category} has the follwing features {list(product.get_data()[0].keys())}")
     return product.check_features(
         known_features
     )
@@ -71,7 +77,7 @@ def main():
 
         write_csv(matching_rows, args.product_category, args.csv_name)
     else:
-        print(f"No matching query for {args.features}")
+        print(f"Check feature arguement {args.features}")
 
 
 if __name__ == '__main__':
