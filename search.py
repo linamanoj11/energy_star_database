@@ -10,8 +10,6 @@ def _split_key_value_pairs(inputs):
     features = {}
     for input in inputs:
         key, value = input.split(":")
-        print(key)
-        print(value)
         features[key] = value
     return features
 
