@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 from sodapy import Socrata
 
-
 from ..datasets.products.electric_vehicle_supply_equipment import ElectricVehicleSupply
 from ..datasets.products.television_data import Television
 from ..datasets.products.uninterruptible_power_supplies import \
@@ -16,7 +15,7 @@ TOKEN_TEXT = "z7rbgOa4tVyiRSpwMQDF4xrv6"
 class EnergyStarDatasets(ABC):
     def __init__(self):
         self.id = "Fake"
-        self.domain='data.energystar.gov'
+        self.domain = 'data.energystar.gov'
         self.token_text = "z7rbgOa4tVyiRSpwMQDF4xrv6"
         self.client = Socrata(self.domain, self.token_text)
 
@@ -24,10 +23,10 @@ class EnergyStarDatasets(ABC):
         return self.client.get(self.id)
 
     @abstractmethod
-    def get_product_features(self)->list:
+    def get_product_features(self) -> list:
         pass
 
-    def check_features(self,expected_features:dict):
+    def check_features(self, expected_features: dict):
         return check_if_feature_value_match(expected_features, self.get_product_features())
 
 
