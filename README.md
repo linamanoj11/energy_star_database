@@ -16,11 +16,19 @@ To run the get command line. Please run the following line from the directory th
 ```
 python -m energy_star_database.get -product_category "foo" -brand_name "bar" -model_name "baz"
 ```
+Note your file may have been downloaded under the name "energy_star_database-main". In this case the command would be:
+```
+python -m energy_star_database-main.get -product_category "foo" -brand_name "bar" -model_name "baz"
+```
 
 Example:
 
 ```
 python -m energy_star_database.get -product_category "television" -brand_name "Silo" -model_name "SL6520V12"
+```
+or
+```
+python -m energy_star_database-main.get -product_category "television" -brand_name "Silo" -model_name "SL6520V12"
 ```
 
 
@@ -34,10 +42,17 @@ To run the get command line. Please run the following line from the directory th
 ```
 python -m energy_star_database.search -product_category "foo" -features bar_feature:bar_value baz_feature:baz_value -csv_name: csv_name.csv
 ```
-
+Again your file may have been downloaded under the name "energy_star_database-main". In this case the command would be:
+```
+python -m energy_star_database-main.search -product_category "foo" -features bar_feature:bar_value baz_feature:baz_value -csv_name: csv_name.csv
+```
 Example
 ```
 python -m energy_star_database.search -product_category "electric vehicle supply" -features input_voltage_v:240 idle_mode_power_factor:0.3 -csv_name baz.csv
+```
+or 
+```
+python -m energy_star_database-main.search -product_category "electric vehicle supply" -features input_voltage_v:240 idle_mode_power_factor:0.3 -csv_name baz.csv
 ```
 Note each product_category has a variety of feature names. If no queries are found then a list of those queries will be outputted.
 ##  Dependencies
